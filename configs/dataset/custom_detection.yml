@@ -4,9 +4,9 @@ evaluator:
   type: CocoEvaluator
   iou_types: ["bbox"]
 
-num_classes: 8 # number of custom dataset classes
+num_classes: 8 # 7 classes + 1 "None" class
 remap_mscoco_category: False
-
+# Use absolute path instead of relative path here, relative path does not work
 train_dataloader:
   type: DataLoader
   dataset:

@@ -45,17 +45,17 @@ optimizer:
   weight_decay: 0.0001
 
 # Increase to search for the optimal ema
-epochs: 220
+epochs: 90
 train_dataloader:
-  total_batch_size: 64
+  total_batch_size: 32
   dataset:
     transforms:
       policy:
-        epoch: 200
+        epoch: 90
   collate_fn:
-    stop_epoch: 200
+    stop_epoch: 90
     ema_restart_decay: 0.9999
     base_size_repeat: 20
 
 val_dataloader:
-  total_batch_size: 128
+  total_batch_size: 32
