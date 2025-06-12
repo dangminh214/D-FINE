@@ -19,7 +19,7 @@ from src.misc import dist_utils
 from src.solver import TASKS
 from pprint import pprint
 
-debug = False
+debug = True
 
 if debug:
     def custom_repr(self):
